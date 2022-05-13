@@ -11,4 +11,9 @@ public class U1 {
     public U1(int value) {
         this.value = value;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(value);
+    }
 }

@@ -1,5 +1,7 @@
 package com.xiaofan0408.classfile;
 
+import java.util.Arrays;
+
 /**
  * @author zefan.xzf
  * @date 2022/5/10 18:39
@@ -24,7 +26,7 @@ public class ClassFile {
 
     public U2 interfacesCount;
 
-    public U2 interfaces;
+    public U2[] interfaces;
 
     public U2 fieldsCount;
 
@@ -32,11 +34,11 @@ public class ClassFile {
 
     public U2 methodsCount;
 
-    public MethodInfo methods;
+    public MethodInfo[] methods;
 
     public U2 attributesCount;
 
-    public AttributeInfo attributes;
+    public AttributeInfo[] attributes;
 
     public ClassFile(U4 magic,
                      U2 minorVersion,
@@ -47,13 +49,13 @@ public class ClassFile {
                      U2 thisClass,
                      U2 superClass,
                      U2 interfacesCount,
-                     U2 interfaces,
+                     U2[] interfaces,
                      U2 fieldsCount,
                      FieldInfo[] fields,
                      U2 methodsCount,
-                     MethodInfo methods,
+                     MethodInfo[] methods,
                      U2 attributesCount,
-                     AttributeInfo attributes) {
+                     AttributeInfo[] attributes) {
         this.magic = magic;
         this.minorVersion = minorVersion;
         this.majorVersion = majorVersion;
@@ -70,5 +72,27 @@ public class ClassFile {
         this.methods = methods;
         this.attributesCount = attributesCount;
         this.attributes = attributes;
+    }
+
+    @Override
+    public String toString() {
+        return "ClassFile{" +
+                "magic=" + magic +
+                ", minorVersion=" + minorVersion +
+                ", majorVersion=" + majorVersion +
+                ", constantPoolCount=" + constantPoolCount +
+                ", constantPool=" + Arrays.toString(constantPool) +
+                ", accessFlags=" + accessFlags +
+                ", thisClass=" + thisClass +
+                ", superClass=" + superClass +
+                ", interfacesCount=" + interfacesCount +
+                ", interfaces=" + Arrays.toString(interfaces) +
+                ", fieldsCount=" + fieldsCount +
+                ", fields=" + Arrays.toString(fields) +
+                ", methodsCount=" + methodsCount +
+                ", methods=" + Arrays.toString(methods) +
+                ", attributesCount=" + attributesCount +
+                ", attributes=" + Arrays.toString(attributes) +
+                '}';
     }
 }
