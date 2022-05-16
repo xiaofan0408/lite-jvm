@@ -1,5 +1,7 @@
 package com.xiaofan0408.classfile;
 
+import com.xiaofan0408.utils.Utils;
+
 import java.util.Arrays;
 
 /**
@@ -78,21 +80,21 @@ public class ClassFile {
     public String toString() {
         return "ClassFile{" +
                 "magic=" + magic +
-                ", minorVersion=" + minorVersion +
-                ", majorVersion=" + majorVersion +
-                ", constantPoolCount=" + constantPoolCount +
-                ", constantPool=" + Arrays.toString(constantPool) +
-                ", accessFlags=" + accessFlags +
-                ", thisClass=" + thisClass +
-                ", superClass=" + superClass +
-                ", interfacesCount=" + interfacesCount +
-                ", interfaces=" + Arrays.toString(interfaces) +
-                ", fieldsCount=" + fieldsCount +
-                ", fields=" + Arrays.toString(fields) +
-                ", methodsCount=" + methodsCount +
-                ", methods=" + Arrays.toString(methods) +
-                ", attributesCount=" + attributesCount +
-                ", attributes=" + Arrays.toString(attributes) +
+                ",\n minorVersion=" + minorVersion +
+                ",\n majorVersion=" + majorVersion +
+                ",\n constantPoolCount=" + constantPoolCount +
+                ",\n constantPool=" + Utils.arrayToString(constantPool) +
+                ",\n accessFlags=" + accessFlags +
+                ",\n thisClass=" + thisClass +
+                ",\n superClass=" + superClass +
+                ",\n interfacesCount=" + interfacesCount +
+                ",\n interfaces=" + Utils.arrayToString(interfaces) +
+                ",\n fieldsCount=" + fieldsCount +
+                ",\n fields=" + Utils.arrayToString(fields) +
+                ",\n methodsCount=" + methodsCount +
+                ",\n methods=" + Utils.arrayToString(methods) +
+                ",\n attributesCount=" + attributesCount +
+                ",\n attributes=" + Utils.arrayToString(attributes) +
                 '}';
     }
 }

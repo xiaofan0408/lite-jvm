@@ -1,5 +1,9 @@
 package com.xiaofan0408.classfile;
 
+import com.xiaofan0408.utils.Utils;
+
+import java.util.Arrays;
+
 /**
  * @author zefan.xzf
  * @date 2022/5/11 17:09
@@ -22,5 +26,16 @@ public class FieldInfo {
         this.descriptorIndex = descriptorIndex;
         this.attributesCount = attributesCount;
         this.attributes = attributes;
+    }
+
+    @Override
+    public String toString() {
+        return "FieldInfo{" +
+                "accessFlags=" + accessFlags +
+                ", nameIndex=" + nameIndex +
+                ", descriptorIndex=" + descriptorIndex +
+                ", attributesCount=" + attributesCount +
+                ", attributes=" + Utils.arrayToString(attributes) +
+                '}';
     }
 }
