@@ -2,6 +2,7 @@ package com.xiaofan0408;
 
 import com.xiaofan0408.classfile.ClassFile;
 
+import com.xiaofan0408.classfile.ClassReader;
 import org.junit.Assert;
 import org.junit.Test;
 

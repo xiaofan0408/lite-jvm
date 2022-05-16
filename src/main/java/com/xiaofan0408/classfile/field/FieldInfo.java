@@ -1,8 +1,8 @@
-package com.xiaofan0408.classfile;
+package com.xiaofan0408.classfile.field;
 
+import com.xiaofan0408.classfile.attribute.AttributeInfo;
+import com.xiaofan0408.classfile.base.U2;
 import com.xiaofan0408.utils.Utils;
-
-import java.util.Arrays;
 
 /**
  * @author zefan.xzf

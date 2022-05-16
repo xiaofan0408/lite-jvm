@@ -1,5 +1,7 @@
-package com.xiaofan0408.classfile;
+package com.xiaofan0408.classfile.attribute;
 
+
+import com.xiaofan0408.classfile.contstant.CpInfo;
 import com.xiaofan0408.runtime.Instruction;
 import com.xiaofan0408.runtime.impl.*;
 

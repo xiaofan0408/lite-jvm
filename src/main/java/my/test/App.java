@@ -1,10 +1,9 @@
 package my.test;
 
 
-import com.xiaofan0408.ClassReader;
+import com.xiaofan0408.classfile.ClassReader;
 import com.xiaofan0408.classfile.ClassFile;
-import com.xiaofan0408.classfile.Code;
-import com.xiaofan0408.classfile.CpInfo;
+import com.xiaofan0408.classfile.attribute.Code;
 import com.xiaofan0408.interpreter.Interpreter;
 import com.xiaofan0408.runtime.Frame;
 import com.xiaofan0408.runtime.Instruction;

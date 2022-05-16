@@ -1,11 +1,16 @@
-package com.xiaofan0408.classfile;
+package com.xiaofan0408.classfile.method;
 
+import com.xiaofan0408.classfile.*;
+import com.xiaofan0408.classfile.attribute.AttributeInfo;
+import com.xiaofan0408.classfile.attribute.Code;
+import com.xiaofan0408.classfile.attribute.ExceptionTable;
+import com.xiaofan0408.classfile.base.U2;
+import com.xiaofan0408.classfile.base.U4;
+import com.xiaofan0408.classfile.contstant.CpInfo;
 import com.xiaofan0408.utils.Utils;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
-import java.io.IOException;
-import java.util.Arrays;
 import java.util.Objects;
 
 /**

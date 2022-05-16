@@ -1,16 +1,17 @@
-package com.xiaofan0408.classfile;
+package com.xiaofan0408.classfile.base;
 
 /**
  * @author zefan.xzf
- * @date 2022/5/11 16:49
+ * @date 2022/5/11 16:48
  */
-public class U4 {
+public class U2 {
 
     public final int value;
 
-    public U4(int value) {
+    public U2(int value) {
         this.value = value;
     }
+
 
     @Override
     public String toString() {

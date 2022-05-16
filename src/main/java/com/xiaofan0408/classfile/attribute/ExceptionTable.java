@@ -1,4 +1,4 @@
-package com.xiaofan0408.classfile;
+package com.xiaofan0408.classfile.attribute;
 
 /**
  * @author zefan.xzf

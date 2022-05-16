@@ -1,4 +1,7 @@
-package com.xiaofan0408.classfile;
+package com.xiaofan0408.classfile.attribute;
+
+import com.xiaofan0408.classfile.base.U2;
+import com.xiaofan0408.classfile.base.U4;
 
 import java.util.Arrays;
 
