@@ -1,7 +1,7 @@
 package my.test;
 
 
-import com.xiaofan0408.classfile.ClassReader;
+import com.xiaofan0408.classfile.ClassFileReader;
 import com.xiaofan0408.classfile.ClassFile;
 import com.xiaofan0408.classfile.attribute.Code;
 import com.xiaofan0408.interpreter.Interpreter;
@@ -24,7 +24,7 @@ public class App
         try (FileInputStream is = new FileInputStream(Paths.get("./data/Sum10.class").toFile());
              DataInputStream dis = new DataInputStream(is)
         ) {
-            final ClassFile file = ClassReader.read(dis); // 1 从输入流中读取 ClassFile 实例 file
+            final ClassFile file = ClassFileReader.read(dis);
             System.out.println(file.toString());
 
 

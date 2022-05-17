@@ -2,7 +2,7 @@ package com.xiaofan0408;
 
 import com.xiaofan0408.classfile.ClassFile;
 
-import com.xiaofan0408.classfile.ClassReader;
+import com.xiaofan0408.classfile.ClassFileReader;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -22,7 +22,7 @@ public class ClassReaderTest {
         try (FileInputStream is = new FileInputStream(Paths.get("./data/Test.class").toFile());
              DataInputStream dis = new DataInputStream(is)
         ) {
-            final ClassFile file = ClassReader.read(dis); // 1 从输入流中读取 ClassFile 实例 file
+            final ClassFile file = ClassFileReader.read(dis); // 1 从输入流中读取 ClassFile 实例 file
 
             Assert.assertEquals(0xCAFEBABE, file.magic.value); // 2 断言 file 的 magic 是 0xCAFEBABE
             Assert.assertEquals(0, file.minorVersion.value); // 3 断言 file 的 minnor_version 是 0

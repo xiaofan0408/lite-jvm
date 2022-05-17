@@ -17,7 +17,7 @@ import java.io.IOException;
  * @author zefan.xzf
  * @date 2022/5/12 16:42
  */
-public class ClassReader {
+public class ClassFileReader {
 
     public static ClassFile read(DataInputStream dis) throws IOException {
 
