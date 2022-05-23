@@ -21,7 +21,7 @@ public class App
 {
     public static void main( String[] args ) throws Exception {
 
-        try (FileInputStream is = new FileInputStream(Paths.get("./data/Sum10.class").toFile());
+        try (FileInputStream is = new FileInputStream(Paths.get("./data/Sub10.class").toFile());
              DataInputStream dis = new DataInputStream(is)
         ) {
             final ClassFile file = ClassFileReader.read(dis);

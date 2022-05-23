@@ -102,6 +102,10 @@ public class Code {
                         instructionMap.put(pc, new IfICmpGtInst(dis.readShort()));
                         pc += 3;
                         break;
+                    case 0x64:
+                        instructionMap.put(pc,new ISubInst());
+                        pc++;
+                        break;
                     default:
                         throw new IllegalStateException("unknown opcode " + opcode);
                 }
